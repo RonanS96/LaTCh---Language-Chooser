@@ -1,0 +1,31 @@
+/* Display text with a typewriter effect.
+ * Copied and modified from: https://css-tricks.com/snippets/css/typewriter-effect/ [Last accessed 19th December 2017].
+ */
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h3 {
+  color: #000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid blue; /* The typwriter cursor */
+  white-space: wrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/*
+@media screen and (max-width: 600px){
+  .typewriter h3{
+    white-space: wrap;
+  }
+}
+*/

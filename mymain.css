@@ -1,0 +1,206 @@
+html{
+   max-width: 100%;
+   scroll-behavior: auto;
+ }
+
+ .nametitle{
+     text-align: center;
+     font-weight: bold;
+ }
+
+ .subtitle{
+    text-align: center;
+ }
+
+ body{
+   padding-bottom: 20px;
+   min-height: 400px;
+   clear: both;
+ }
+
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #000;
+ }
+
+ table{
+   padding-bottom: 20%;
+ }
+
+ .header{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   padding-bottom: 0px;
+ }
+
+ li.fright{
+   float: right;
+   font-weight: bold;
+ }
+
+ .nametitle{
+   padding-top: 7%;
+   font-size: 70px;
+ }
+
+ .clear { clear: both; height: 60px; }
+
+ .footer{
+   position: fixed;
+   float: none;
+   bottom: 0;
+   width: 100%;
+ }
+
+ .footer.li{
+   float: right;
+ }
+
+ img.logo{
+   width: 390px;
+   height: 190px;
+   float: none;
+ }
+
+li {
+     display: inline;
+     float: left;
+     font-weight: bold;
+ }
+
+ li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ li a:hover {
+     background-color: #1E90FF;
+     font-weight: bold;
+     color: white;
+ }
+
+  li a.no-hover:hover {
+     background-color: black;
+     font-weight: bold;
+     color: white;
+ }
+
+li a:click{
+  background-color: #1E90FF;
+  color: white;
+}
+
+li a:active{
+  background-color: #1E90FF;
+  color: white;
+}
+
+ .button{
+   display: inline;
+   padding: 5px;
+ }
+
+ div.para{
+   padding-left: 20%;
+   padding-right: 20%;
+ }
+
+ li.dropdown
+ {
+   display: none;
+ }
+
+ button {
+  display: inline-block;
+  width: 10%;
+  padding:3% 0%;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #111;
+  border: none;
+  border-radius: 50px;
+ }
+
+ button:hover {background-color: #1E90FF}
+
+ button:active {
+  background-color: #1E90FF;
+  box-shadow: 0 5px #666;
+ }
+
+ @media screen and (max-width: 1400px){
+   .button{display: block;}
+   button{
+     width: 50%;
+   }
+ }
+
+ @media screen and (max-width: 600px){
+   h1.subtitle{
+      max-width: 100%;
+    }
+
+    li.dropdown{
+      display: inline;
+    }
+
+    li.not-dropdown{
+      display: none;
+    }
+
+    #nav-dropdown{
+      display:none;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1
+    }
+    button{
+      width: 90%;
+    }
+
+    #nav:hover #nav-dropdown{
+      display: block;
+    }
+
+    #nav:hover li.not-dropdown{
+      display: block;
+    }
+
+    #nav:hover li.dropdown{
+      display: none;
+    }
+
+    img.logo{
+      width: 300px;
+      height: 150px;
+      float: none;
+    }
+
+    button{
+      padding:5% 10%;
+    }
+
+    .nametitle{
+        font-size: 55px;
+        max-width: 100%;
+    }
+
+    ul li {float: none; display: block;}
+    li.fright {float: none;}
+    table{max-width: 100%; }
+    .header{position: relative; top: 100%;}
+    .button{display: block;}
+    div.para{padding-left: 0; padding-right: 0;}
+ }

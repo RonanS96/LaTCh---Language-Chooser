@@ -1,0 +1,316 @@
+<!-- QUESTIONS. The table of questions which adjusts based on the users answers. 
+	 - Edited from source: https://codepen.io/rlemon/pen/rJsgi
+   - and so is questions.css. -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../img/favicon.png">
+	<title>LaTCh - Questionnaire</title>
+	<link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<body>
+	<h1 class="subtitle"><a href="../index.php"><img padding-top: "0" class="logo" src="../img/LaTCh-black.png"></img></a></h1>
+	<h3 class="subtitle"><a href="../index.php">Return to website</a></h3>
+	<h3 class="subtitle">
+	<div id="menu">
+		<!-- Final Answers ----------------------------------------------------------------->
+				<ul id="static">
+					<li class="title">You should use HTML and CSS!</li>
+					<li class="back"><a href="#web">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/HTML.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/HTML.png"></img></h1></a></li>
+					<li class="item"><a target="_blank" href="../Languages/CSS.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/CSS.png"></img></h1></a></li>
+					<li class="item">These are the most commonly used languages for front-end web development and they are very well documented online</li>
+					<li class="item"><a target="_blank" href="../Languages/HTML.php">Click here to find out more about HTML</a></li>
+					<li class="item"><a target="_blank" href="../Languages/CSS.php">Click here to find out more about CSS</a></li>
+				</ul>
+
+				<ul id="client">
+					<li class="title">You should use JavaScript!</li>
+					<li class="back"><a href="#web">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/JavaScript.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/JavaScript.png"></img></h1></a></li>
+					<li class="item">JavaScript - not to be confused with Java - is a scripting language that is great for server-side scripting on webpages.  There are plenty resources online to help you get started with JavaScript, and there are some useful libraries and frameworks, for example JQuery and AJAX.</li>
+					<li class="item"><a href ="../Languages/JavaScript.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="server">
+					<li class="title">You should use PHP or Python!</li>
+					<li class="back"><a href="#web">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Python.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Python.png"></img></h1></a></li>
+					<li class="item"><a target="_blank" href="../Languages/PHP.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/PHP.png"></img></h1></a></li>
+					<li class="item">Both PHP and Python are fantastic languages for server side scripting.</li>
+					<li class="item"><a href ="../Languages/Python.php">Click here to find out more about Python</a></li>
+					<li class="item"><a href ="../Languages/PHP.php">Click here to find out more about PHP</a></li>
+				</ul>
+
+				<ul id="mongo">
+					<li class="title">You should use MongoDB!</li>
+					<li class="back"><a href="#dynamic">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/MongoDB.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/MongoDB.png"></img></h1></a></li>
+					<li class="item">An extremely popular non-relational, NoSQL and document store system.  MongoDB is a more modern and scalable approach to database management.</li>
+					<li class="item"><a target="_blank" href="../Languages/MongoDB.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="sql">
+					<li class="title">You should use MySQL!</li>
+					<li class="back"><a href="#dynamic">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/SQL.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/SQL.png"></img></h1></a></li>
+					<li class="item">The most common and widely used relational database management system.</li>
+					<li class="item"><a target="_blank" href="../Languages/SQL.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="framework">
+					<li class="title">You should use CakePHP or Flask!</li>
+					<li class="back"><a href="#web">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/CakePHP.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/CakePHP.png"></img></h1></a></li>
+					<li class="item"><a target="_blank" href="../Languages/Flask.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Flask.png"></img></h1></a></li>
+					<li class="item">These frameworks are based around the most common back-end scripting languages - PHP and Python.  Once you get started it is fairly easy to build dynamic websites very quickly!</li>
+					<li class="item"><a target="_blank" href="../Languages/CakePHP.php">Click here to find out more about CakePHP</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Flask.php">Click here to find out more about Flask</a></li>
+				</ul>
+
+				<ul id="dwindows">
+					<li class="title">You should use C#!</li>
+					<li class="back"><a href="#dapps">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/CSharp.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/CSharp.png"></img></h1></a></li>
+					<li class="item">C# is Microsoft's language and it is ideal for working with the Windows operating system.</li>
+					<li class="item"><a target="_blank" href="../Languages/CSharp.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="dmacOS">
+					<li class="title">You should use Swift!</li>
+					<li class="back"><a href="#dapps">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Swift.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Swift.png"></img></h1></a></li>
+					<li class="item">Swift is Apple's (fairly) new programming language, designed for building MacOS and iOS software.</li>
+					<li class="item"><a target="_blank" href="../Languages/Swift.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="dCrossPlatform">
+					<li class="title">You should use Java!</li>
+					<li class="back"><a href="#dapps">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Java.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Java.png"></img></h1></a></li>
+					<li class="item">Java Virtual Machine (JVM) gives the Java language a huge amount of flexibility and portability when moving between different machines and operatimg systems.  This makes it ideal for cross-platform development.</li>
+					<li class="item"><a target="_blank" href="../Languages/Java.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="dlinux">
+					<li class="title">You should use Java!</li>
+					<li class="back"><a href="#dapps">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Java.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Java.png"></img></h1></a></li>
+					<li class="item">Java is widely used and has plenty libraries to aid with your development.</li>
+					<li class="item"><a target="_blank" href="../Languages/Java.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="mwindows">
+					<li class="title">You should use C#!</li>
+					<li class="back"><a href="#mapps">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/CSharp.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/CSharp.png"></img></h1></a></li>
+					<li class="item">C# is Microsoft's language, which makes it ideal for interacting with Microsoft's Windows Phone operating system.</li>
+					<li class="item"><a target="_blank" href="../Languages/CSharp.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="miOS">
+					<li class="title">You should use Swift!</li>
+					<li class="back"><a href="#mapps">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Swift.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Swift.png"></img></h1></a></li>
+					<li class="item">Swift is Apple's (fairly) new programming language, designed for building MacOS and iOS software.</li>
+					<li class="item"><a target="_blank" href="../Languages/Swift.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="mAndroid">
+					<li class="title">You should use Java!</li>
+					<li class="back"><a href="#mapps">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Java.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Java.png"></img></h1></a></li>
+					<li class="item">Java is the go-to language for creating Android apps at the moment.  It's easy to get started on Android development with Java by using Eclipse or Android Studio IDEs (Integrated Development Environment).</li>
+					<li class="item"><a target="_blank" href="../Languages/Java.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="functional">
+					<li class="title">You should use SML New Jersey!</li>
+					<li class="back"><a href="#maths">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/SML.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/SML.png"></img></h1></a></li>
+					<li class="item">If you like functional programming, or if you are just getting started, SML is a very interesting and useful language to learn.</li>
+					<li class="item"><a target="_blank" href="../Languages/SML.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="logical">
+					<li class="title">You should use Prolog!</li>
+					<li class="back"><a href="#maths">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Prolog.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Prolog.png"></img></h1></a></li>
+					<li class="item">Prolog is a useful language for logical programming.  It can be applied to lots of interesting areas including AI (Artificial Intelligence).</li>
+					<li class="item"><a target="_blank" href="../Languages/Prolog.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="matrix">
+					<li class="title">You should use MatLab!</li>
+					<li class="back"><a href="#maths">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/MatLab.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/MatLab.png"></img></h1></a></li>
+					<li class="item">MatLab provides great functionality for matrix manipulation.  Also, you don't have to be an expert programmer to use it.</li>
+					<li class="item"><a target="_blank" href="../Languages/MatLab.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="dsPython">
+					<li class="title">You should use Python!</li>
+					<li class="back"><a href="#datascience">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Python.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Python.png"></img></h1></a></li>
+					<li class="item">Python is commonly used for data science and has a huge amount of libraries and resources available.  If you've programmed before, or even if you're new to programming, you should be able to pick up the language fairly quickly.</li>
+					<li class="item"><a target="_blank" href="../Languages/Python.php">Click here to find out more</a></li>
+				</ul>
+				<ul id="dsR">
+					<li class="title">You should use R!</li>
+					<li class="back"><a href="#datascience">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/R.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/R.png"></img></h1></a></li>
+					<li class="item">R was developed specifically for data science.  It is a great language to use if you don't mind the steep learning curve that comes with it!</li>
+					<li class="item"><a target="_blank" href="../Languages/R.php">Click here to find out more</a></li>
+				</ul>
+				<ul id="dsMatLab">
+					<li class="title">You should use MatLab!</li>
+					<li class="back"><a href="#datascience">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/MatLab.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/MatLab.png"></img></h1></a></li>
+					<li class="item">MatLab is a development environment, rather than a language.  This means you need no prior programming skills to use it, and it's great for data manipulation.</li>
+					<li class="item"><a target="_blank" href="../Languages/MatLab.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="blockApp">
+					<li class="title">You should use Thunkable!</li>
+					<li class="back"><a href="#fun">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Thunkable.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Thunkable.png"></img></h1></a></li>
+					<li class="item">Thunkable is an online tool for creating Android and iOS apps quickly and easily using block-programming.  You can even demo the apps on your smartphone.</li>
+					<li class="item"><a target="_blank" href="../Languages/Thunkable.php">Click here to find out more</a></li>
+				</ul>
+				<ul id="blockScratch">
+					<li class="title">You should use Scratch!</li>
+					<li class="back"><a href="#fun">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Scratch.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Scratch.png"></img></h1></a></li>
+					<li class="item">Scratch is a block-programming environment where you can have a lot of fun moving an image (called a 'sprite') around.  You can have fun with this while learning some of the fundamentals of programming.</li>
+					<li class="item"><a target="_blank" href="../Languages/Scratch.php">Click here to find out more</a></li>
+				</ul>
+				<ul id="funPython">
+					<li class="title">You should use Python!</li>
+					<li class="back"><a href="#fun">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/Python.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/Python.png"></img></h1></a></li>
+					<li class="item">Python has simple syntax, and you can download a Python terminal where you can run small commands and try-out small programs.</li>
+					<li class="item"><a target="_blank" href="../Languages/Python.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="compiler">
+					<li class="title">You should use C!</li>
+					<li class="back"><a href="#top">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/C.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/C.png"></img></h1></a></li>
+					<li class="item">Although there are lots of languages you could use for this, C is recommended here as it is widely used in this area and it is designed for low-level or system-level programming.  If you know what you're doing, you can make your compiler very efficient in C!</li>
+					<li class="item"><a target="_blank" href="../Languages/C.php">Click here to find out more</a></li>
+				</ul>
+
+				<ul id="buildos">
+					<li class="title">You should use C and Assembly!</li>
+					<li class="back"><a href="#top">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/C.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/C.png"></img></h1></a></li>
+					<li class="item"><a target="_blank" href="../Languages/ARMAssembly.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/ARM Assembly.png"></img></h1></a></li>
+					<li class="item">
+
+							C is a great language for building a bridge between your hardware and software.  It has low-level language features like direct memory manipulation but also high-level capability that could be used to run a user interface.
+							However, Assembly language gives you the much needed efficiency and accuracy at the lowest levels of programming.  You will need to use either MIPS or ARM Assembly depending on the hardware.
+						</a>
+				  </li>
+					<li class="item"><a target="_blank" href="../Languages/C.php">Click here to find out more about C</a></li>
+					<li class="item"><a target="_blank" href="../Languages/ARMAssembly.php">Click here to find out more about ARM Assembly</a></li>
+					<li class="item"><a target="_blank" href="../Languages/MIPSAssembly.php">Click here to find out more about MIPS Assembly</a></li>
+				</ul>
+
+				<ul id="embedded">
+					<li class="title">You should use Assembly Language!</li>
+					<li class="back"><a href="#top">&laquo; Back</a></li>
+					<li class="item"><a target="_blank" href="../Languages/ARMAssembly.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/ARM Assembly.png"></img></h1></a></li>
+					<li class="item"><a target="_blank" href="../Languages/MIPSAssembly.php"><h1 class="subtitle"><img padding-top: "0"  height="150" width="150" src="../img/language/MIPS Assembly.png"></img></h1></a></li>
+					<li class="item">
+
+						Typically, embedded systems are a small part of a larger system.  They are usually expected to carry out operations quickly and can't take up a lot of memory.  This is why Assembly language is suited.  There is very little abstraction there to slow it down.
+						Remember, you need to use the language that corresponds to the hardware you are running it on at this level - ARM or MIPS are the most common options.
+					</a>
+					</li>
+					<li class="item"><a target="_blank" href="../Languages/ARMAssembly.php">Click here to find out more about ARM Assembly</a></li>
+					<li class="item"><a href="../Languages/MIPSAssembly.php">Click here to find out more about MIPS Assembly</a></li>
+				</ul>
+	<!-- Final Answers ----------------------------------------------------------------->
+
+	<!-- Question 3 ----------------------------------------------------------------->
+
+	<!-- Question 3 ----------------------------------------------------------------->
+				<ul id="dynamic">
+					<li class="title">Q3. What type of database system would you like to use?</li>
+					<li class="back"><a href="#web">&laquo; Back</a></li>
+					<li class="item"><a href="#mongo">Non-Relational</a></li>
+					<li class="item"><a href="#sql">Relational</a></li>
+				</ul>
+	<!-- Question 2 ----------------------------------------------------------------->
+			<ul id="fun">
+				<li class="title">Q2. What would you like to do?</li>
+				<li class="back"><a href="#top">&laquo; Back</a></li>
+				<li class="cat"><a href="#blockApp">Block Programming - Create a mobile app</a></li>
+				<li class="cat"><a href="#blockScratch">Block Programming - Create small animations</a></li>
+				<li class="cat"><a href="#funPython">Simple coding exercises</a></li>
+			</ul>
+
+			<ul id="dapps">
+				<li class="title">Q2. What Operating System would you like to build desktop apps for?</li>
+				<li class="back"><a href="#top">&laquo; Back</a></li>
+				<li class="cat"><a href=#dwindows>Windows</a></li>
+				<li class="cat"><a href="#dmacOS">Mac OS</a></li>
+				<li class="cat"><a href="#dlinux">Linux</a></li>
+				<li class="cat"><a href="#dCrossPlatform">Cross Platform</a></li>
+			</ul>
+
+			<ul id="mapps">
+				<li class="title">Q2. What Operating System would you like to build mobile apps for?</li>
+				<li class="back"><a href="#top">&laquo; Back</a></li>
+				<li class="cat"><a href="#mAndroid">Android</a></li>
+				<li class="cat"><a href="#miOS">iOS</a></li>
+				<li class="cat"><a href="#mwindows">Windows</a></li>
+			</ul>
+
+			<ul id="maths">
+				<li class="title">Q2. What area of maths?</li>
+				<li class="back"><a href="#top">&laquo; Back</a></li>
+				<li class="cat"><a href="#functional">Function Manipulation</a></li>
+				<li class="cat"><a href="#logical">Logic</a></li>
+				<li class="cat"><a href="#matrix">Matrix Manipulation</a></li>
+			</ul>
+
+			<ul id="web">
+				<li class="title">Q2. What kind of web development would you like to do?</li>
+				<li class="back"><a href="#top">&laquo; Back</a></li>
+				<li class="cat"><a href="#static">Build a static website</a></li>
+				<li class="cat"><a href="#dynamic">Build a dynamic website with a database</a></li>
+				<li class="cat"><a href="#client">Client-side scripting</a></li>
+				<li class="cat"><a href="#server">Server-side scripting</a></li>
+				<li class="cat"><a href="#framework">Build a dynamic website quickly with a framework</a></li>
+			</ul>
+
+			<ul id="datascience">
+				<li class="title">Q2. Have you done much programming before?</li>
+				<li class="back"><a href="#top">&laquo; Back</a></li>
+				<li class="cat"><a href="#dsMatLab">Not at all</a></li>
+				<li class="cat"><a href="#dsPython">Yes, a bit</a></li>
+				<li class="cat"><a href="#dsR">Yes, a lot</a></li>
+			</ul>
+	<!-- Question 2 ----------------------------------------------------------------->
+
+	<!-- Top Level ----------------------------------------------------------------->
+	    <ul id="top">
+	        <li class="title">Q1: What type of programming would you like to do?</li>
+	        <li class="cat"><a href="#dapps">Desktop Applications</a></li>
+	        <li class="cat"><a href="#mapps">Mobile Apps</a></li>
+	        <li class="cat"><a href="#maths">Mathematics</a></li>
+	        <li class="cat"><a href="#web">Web Development</a></li>
+					<li class="cat"><a href="#datascience">Data Science</a></li>
+					<li class="cat"><a href="#compiler">Build a Compiler</a></li>
+					<li class="cat"><a href="#buildos">Build an OS</a></li>
+					<li class="cat"><a href="#embedded">Embedded Systems</a></li>
+			    <li class="cat"><a href="#fun">Something easy, and fun! (For beginners)</a>
+	    </ul>
+	<!-- Top Level ----------------------------------------------------------------->
+	</div>
+</h3>
+	<h3 class="subtitle">NOTE: Languages on this website are only suggestions and you don't have to stick to the languages or tools suggested.  If you think any of the languages have been incorrectly suggested, please let us know on the <a href="../feedback.php">feedback</a> page.</h3>
+</body>
+</html>
